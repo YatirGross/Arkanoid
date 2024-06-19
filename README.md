@@ -59,28 +59,37 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/arkanoid-game.git
+    git clone https://github.com/your-username/Arkanoid.git
     cd arkanoid-game
     ```
 
 2. **Compile the project:**
     ```bash
-    javac -d bin src/**/*.java
+    javac -cp ".;biuoop-1.4.jar" src/*.java src/GameLevels/*.java src/GameTools/*.java src/geometry/*.java src/Notifier/*.java src/sprites/*.java -d out\production\ex_6
     ```
-
     This command compiles all Java files (`*.java`) from the `src` directory and its subdirectories (`**`) and stores the compiled `.class` files in the `bin` directory.
 
-3. **Run the game:**
+3. **Run the game with custom levels:**
+   After compiling successfully, run the game using java, ensuring the classpath includes the compiled bytecode (out\production\ex_6) and biuoop-1.4.jar. You can specify the order and number of 
+   levels (1, 2, or 3) as command-line arguments. For example:
     ```bash
-    java -cp bin GameRunner
+    java -cp "out\production\ex_6;biuoop-1.4.jar" Ass6Game 1 2 3
     ```
+    - Replace 1 2 3 with your desired order and number of levels.
+    - The game will run with levels in the specified order, and you can experiment with different combinations.
+    
 
     This command runs the game using the compiled bytecode (`bin` directory) and starts the game by executing the `GameRunner` class.
 
+
 Make sure you have Java Development Kit (JDK) installed and configured correctly on your system to compile and run Java programs from the command line. Adjust paths and commands as necessary based on your specific development environment or project structure.
 
-Usage
-The game consists of several levels, each with unique configurations and challenges. Control a paddle to bounce a ball and break blocks. Track your score and handle game events like level completion and game over.
 
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
+## Usage
+    The game consists of several levels, each with unique configurations and challenges. Control a paddle to bounce a ball and break blocks. 
+    Track your score and handle game events like level
+    completion and game over.
+
+
+## Contributing
+    Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
