@@ -86,10 +86,11 @@ Make sure you have Java Development Kit (JDK) installed and configured correctly
 
 
 ## Usage
-    The game consists of several levels, each with unique configurations and challenges. Control a paddle to bounce a ball and break blocks. 
-    Track your score and handle game events like level
-    completion and game over.
+
+The game consists of several levels, each with unique configurations and challenges. Control a paddle to bounce a ball and break blocks. 
+Track your score and handle game events like level
+completion and game over.
 
 
 ## Contributing
-    Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
